@@ -1,0 +1,159 @@
+input, textarea,select, button{
+	font-family: "microsoft yahei";
+}
+.diag_div_main{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    font-family: Microsoft Yahei;
+    font-size: 16px;
+    display: none;
+}
+.diag_div_screen{
+    width: 100%;
+    height: 100%;
+    background-color: #666;
+    opacity: 0.5;
+    z-index: 10000;
+}
+.diag_div_qrcode_main {
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.diag_div_qrcode{
+    position: fixed;
+	width: 878px;
+    height: 470px;
+    top: 50%;
+    margin-top: -230px;
+    left: 50%;
+    margin-left: -439px;
+    text-align: center;
+    z-index: 10001;
+}
+
+.diag_div_qrcode .diag_left_middle{
+	width: 720px;
+	height: 100%;
+	background: #fff;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    margin-left: -360px;
+}
+.diag_div_qrcode .diag_left{
+	width: 243px;
+	height: 100%;
+	background: #fff;
+    float: left;
+    background-color: #f1f1f1;
+}
+.diag_div_qrcode .diag_left_middle .diag_close_left{
+	display: block;
+}
+
+.diag_div_qrcode .diag_right{
+	width: 633px;
+	height: 100%;
+	background: #fff;
+    float: left;
+    display: none;
+}
+
+.diag_div_qrcode .diag_close{
+	cursor:pointer;
+	float:right;
+	width: 32px;
+	height: 32px;
+	background:url(../default/close.png) no-repeat;
+}
+
+.diag_div_qrcode .diag_title_div{
+    text-align: left;
+    margin-top: 30px;
+}
+.title_div_line{
+	width:90%;
+	height:1px;
+	background-color:#d8d8d8;
+	margin:0 auto;
+	text-align: center!important;
+}
+.title_div_line label{
+	width:110px;
+	height:20px;
+	line-height: 20px;
+	text-align: center;
+	font-size: 16px;
+	display: inline-block;
+	background-color: #fff;
+	position: relative;
+	bottom: 10px;
+}
+.diag_con_div{
+	width:90%;
+	height:350px;
+	margin-top:35px;
+	padding:0 5%;
+	margin-bottom: 10px;
+	border-bottom:1px solid #d8d8d8;
+	color:#646464;
+	font-size: 14px;
+}
+.diag_con_left{
+	width:180px;
+	height:320px;
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
+}
+.diag_con_middle{
+	width:20px;
+	height:320px;
+	display: inline-block;
+	background: url(../default/spaceimg.png) no-repeat;
+	background-size: 100%;
+	margin:0 11px;
+}
+.diag_con_right{
+	width:426px;
+	height:320px;
+	display: inline-block;
+	vertical-align: top;
+	text-align: left;
+}
+.diag_con_right textarea{
+	width:426px;
+	height:120px;
+	padding:5px;
+	color:#646464;
+	border:1px solid #d7d7d7;
+	border-radius: 5px;
+	margin-top:10px;
+	margin-bottom:10px;
+	resize: none;
+}
+.diag_div_qrcode .diag_close_left{
+	cursor:pointer;
+	width: 32px;
+	height: 32px;
+    position: absolute;
+    right:0;
+	background:url(../default/close.png) no-repeat;
+	display: none;
+}
+button[class='confirmBtn']{
+	width:85px;
+	height:30px;
+	color:#fff;
+	background-color:#3b8ede;
+	border:1px solid #3b8ede;
+	border-radius: 4px;
+	float: right;
+	margin-right: 30px;
+	cursor: pointer;
+}

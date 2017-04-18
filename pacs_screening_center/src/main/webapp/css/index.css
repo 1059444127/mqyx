@@ -1,0 +1,141 @@
+@charset "utf-8";
+/*初始化*/
+body,
+header,
+footer,
+aside,
+nav,
+section,
+article,
+div,
+span,
+i,
+b,
+em,
+strong,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+ul,
+li,
+input,
+select,
+textarea,
+option,
+button,
+th,
+td,
+dl,
+dt,
+dd,
+p,
+form,
+ol,
+label {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: normal;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+li {
+  list-style: none;
+}
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  border: 0;
+  background: none;
+  -webkit-appearance: none;
+  outline: none;
+}
+a {
+  display: block;
+  -webkit-touch-callout: none;
+  text-decoration: none;
+  outline: none;
+}
+em,
+i {
+  font-style: normal;
+}
+img {
+  border: 0 none;
+  vertical-align: middle;
+}
+body {
+  font-family: "microsoft yahei";
+  margin: 0 auto;
+}
+/*公共*/
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: '.';
+  visibility: hidden;
+  clear: both;
+  height: 0;
+  display: block;
+}
+.singleE {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+body {
+  font-size: 20px;
+}
+.inputWrapper label {
+  display: inline-block;
+}
+.inputWrapper input {
+  height: 30px;
+  padding: 5px;
+  border: #c8c8c8 1px solid;
+  border-radius: 6px;
+}
+.input-s {
+  width: 90px;
+}
+.input-m {
+  width: 200px;
+}
+.input-l {
+  width: 500px;
+}
+body {
+  background: #093758;
+}
+.loginBox {
+  width: 450px;
+  background: #fff;
+  border-radius: 8px;
+}
+.loginBox .title {
+  line-height: 50px;
+  background: gray;
+  border-bottom: #c8c8c8 0.01rem solid;
+  box-sizing: border-box;
+  font-size: 24px;
+  color: #fff;
+}

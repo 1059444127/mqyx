@@ -1,0 +1,22 @@
+<body>
+	<script type="text/javascript">
+	function gotoPtUrl(obj, ptUrl){
+		if(obj.parent == obj){
+			obj.location.href = ptUrl;
+			return;
+		} else {
+			gotoPtUrl(obj.parent, ptUrl);
+		}
+	}
+	
+	$(document).ready(function() {
+		var ptUrl = getCookie("login_url");
+		gotoPtUrl(window, ptUrl);
+		return;
+	});
+	function getCookie(name){
+		var arr=new RegExp("(^| )"+name+"=([^;]*)(;|$)");
+		return unescape(document.cookie.match(arr)[2]);	
+	}
+	</script>
+</body>

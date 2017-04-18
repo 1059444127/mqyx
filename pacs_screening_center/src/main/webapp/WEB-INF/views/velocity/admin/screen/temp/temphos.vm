@@ -1,0 +1,88 @@
+<link rel="stylesheet" href="/css/temp/hospital.css" />
+		<header class="b-header">
+            <div class="layer">
+                <img class="logo" src="/img/login/logo.png">
+            </div>
+        </header>
+		
+		<div class="b-middle layer clearfix">
+			<h2>梅清云影像平台签约医院</h2>
+			<dl class="b-middle-left">
+                <dt><img src="/img/temphos/lv1.png" alt=""/></dt>
+                <dd class="name">绿城口腔医院</dd>
+                <dd class="orange" style="cursor: pointer;">关注医院+</dd>
+			</dl>
+			<ul class="b-middle-right">
+				<li class="hospital-intro">
+					<h3>医院简介</h3>
+					<p>杭州绿城口腔医院是集口腔健康预防、治疗、美容、保健为一体的综合性现代化口腔医院。医院坐落于浙江杭州市，由名列中国房地产公司品牌价值TOP10的绿城集团控股投资建设，毗邻西湖景区。医院服务项目齐全，设有牙周病科、口腔颌面外科、口腔预防、口腔修复、等重点科室，并以儿童口腔、口腔种植、口腔正畸为特色，与国内外多所知名口腔专业院校保持良好合作，为广大市民提供贴心、舒心、放心的优质口腔医疗服务。</p>
+				</li>
+				<li class="hospital-doctor">
+					<h3>合作医生</h3>
+					<ul class="clearfix">
+						<li>
+                            <a href="/temp/tempdoc.htm" >
+                                <dl>
+                                    <dt><img src="/img/tempdoc/1.png" alt=""/></dt>
+                                    <dd>石明国</dd>
+                                    <dd>教授</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/temp/tempdoc.htm" >
+                                <dl>
+                                    <dt><img src="/img/tempdoc/2.png" alt=""/></dt>
+                                    <dd>余岂</dd>
+                                    <dd>教授</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/temp/tempdoc.htm" >
+                                <dl>
+                                    <dt><img src="/img/tempdoc/3.png" alt=""/></dt>
+                                    <dd>葛城</dd>
+                                    <dd>硕导</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/temp/tempdoc.htm" >
+                                <dl>
+                                    <dt><img src="/img/tempdoc/4.png" alt=""/></dt>
+                                    <dd>徐林</dd>
+                                    <dd>教授</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/temp/tempdoc.htm" >
+                                <dl>
+                                    <dt><img src="/img/tempdoc/5.png" alt=""/></dt>
+                                    <dd>王国一</dd>
+                                    <dd>教授</dd>
+                                </dl>
+                            </a>
+                        </li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		
+		
+        <footer class="b-footer">
+            <div class="layer">
+                <div class="b-footer-us">
+                    <a href="">关于我们</a>|
+                    <a href="">联系我们</a>|
+                    <a href="">加入我们</a>
+                </div>
+                <div class="b-footer-content">
+                    Copyright &nbsp;(C)&nbsp;杭州梅清数码科技有限公司 &nbsp;&nbsp;地址：&nbsp;杭州市高新区（滨江）西湘路66号&nbsp;&nbsp;咨询电话：0571-86057861
+                </div>
+                <div class="b-footer-information">
+                    <span id="support">技术支持：<i class="hn_copy_icon"></i>杭州梅清数码科技有限公司&nbsp;&nbsp;访问统计 :&nbsp;&nbsp;<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261014197'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1261014197%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script><span id="cnzz_stat_icon_1261014197"><a href="http://www.cnzz.com/stat/website.php?web_id=1261014197" target="_blank" title="站长统计"><img border="0" hspace="0" vspace="0" src="http://icon.cnzz.com/img/pic1.gif"></a></span><script src=" http://s11.cnzz.com/z_stat.php?id=1261014197&amp;show=pic1" type="text/javascript"></script><script src="http://c.cnzz.com/core.php?web_id=1261014197&amp;show=pic1&amp;t=z" charset="utf-8" type="text/javascript"></script></span>
+                </div>
+            </div>
+        </footer>

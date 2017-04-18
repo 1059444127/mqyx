@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xmlns="http://java.sun.com/xml/ns/javaee" 
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" 
+id="WebApp_ID" version="3.0">
+	<!-- springMVC -->
+ <!--  DispatcherServlet 是Spring MVC 的入口  -->
+  <servlet>
+  	<servlet-name>pacs_screening_center</servlet-name>
+  	<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+  	<init-param>
+  			<param-name>contextConfigLocation</param-name>
+  			<param-value>/WEB-INF/pacs_screening_center-servlet.xml</param-value>
+  	</init-param>
+  	<load-on-startup>1</load-on-startup>
+  </servlet>
+  
+  <!-- 注册 DispatcherServlet 后 还应指定有 Spring 处理的 url 模板  -->
+  <!-- 请求 .htm 的处理 就全部交由 Spring 处理 --> 
+  <servlet-mapping>
+  	<servlet-name>pacs_screening_center</servlet-name>
+  	<url-pattern>*.htm</url-pattern>
+  </servlet-mapping>
+  
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+  <context-param>
+  	<param-name>contextConfigLocation</param-name>
+  	<param-value>
+  		/WEB-INF/config/constants.xml,
+  		/WEB-INF/config/velocity.xml,
+  		/WEB-INF/config/mybatis.xml,
+  		/WEB-INF/config/cache.xml
+  	</param-value>
+  </context-param>
+  
+    <!-- post请求乱码 -->
+	<filter>  
+	    <filter-name>CharacterEncodingFilter</filter-name>  
+	    <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>  
+	    <init-param>  
+	        <param-name>encoding</param-name>  
+	        <param-value>utf-8</param-value>  
+	    </init-param>  
+	</filter>  
+	<filter-mapping>  
+	    <filter-name>CharacterEncodingFilter</filter-name>  
+	    <url-pattern>*.htm</url-pattern>  
+	</filter-mapping>  
+</web-app>

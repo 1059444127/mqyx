@@ -1,0 +1,166 @@
+//var digUrl = "http://test.diagnose.zwjk.com";
+var digUrl = "http://127.0.0.1:8800";
+var digId = 0;
+var openName = $("#openName").val();
+//初始化弹窗
+function diag_initializeScanPopup(dig_A, dig_B){
+	diag_createAllElement(dig_A, dig_B);
+	
+	zTree_init_fun();
+	
+	$("#diag_fileListDiv").children().remove();
+	$("#diag_divMain").show();
+	
+	//绑定关闭事件
+	$(".diag_cancel").click(diag_closeScan);
+	$(".diag_close").click(diag_closeScan);
+	$(".diag_close_left:eq(0)").click(diag_closeScan);
+	
+}
+
+//关闭窗口
+function diag_closeScan(){
+	diag_scanCount = 1000;
+	$("#diag_fileListDiv").children().remove();
+	$("#diag_rightDiv").hide();
+	if($("#diag_leftDiv").hasClass("diag_left")) {
+		$("#diag_leftDiv").removeClass("diag_left").addClass("diag_left_middle");
+	}
+	$("#diag_divMain").hide();
+}
+
+//**********************************************************************************************
+//创建弹窗元素
+function diag_createAllElement(dig_A, dig_B) {
+	if($("#diag_divMain").length > 0) {
+		return false;
+	}
+	var e = [];
+	e.push('<div id="diag_divMain" class="diag_div_main">');
+		e.push('<div class="diag_div_screen"></div>');
+		e.push('<div class="diag_div_qrcode">');
+			//录入诊断意见
+			e.push('<div class="diag_left_middle" id="diag_leftDiv">');
+				e.push('<div class="diag_close_left"></div>');
+				e.push('<div class="diag_title_div title_div_line"><label>录入诊断意见</label></div>');
+				e.push('<div class="diag_con_div">');
+					e.push('<div class="diag_con_left">');
+						e.push('<div>诊断模板：</div>');
+						e.push('<ul id="tree1" class="ztree" style="overflow:auto;height:300px"></ul>');
+					e.push('</div>');
+					e.push('<div class="diag_con_middle"></div>');
+					e.push('<div class="diag_con_right">');
+						e.push('<div>检查所见：</div>');
+						e.push('<textarea id="diag_A">'+dig_A+'</textarea>');
+						e.push('<div>专家意见：</div>');
+						e.push('<textarea id="diag_B">'+dig_B+'</textarea>');						
+					e.push('</div>');
+				e.push('</div>');
+				e.push('<button class="confirmBtn" onclick=\'diag_save();\'>保&nbsp;存</button>');
+				e.push('<button class="confirmBtn" onclick=\'diag_view();\'>预&nbsp;览</button>');
+				e.push('<button class="confirmBtn" onclick=\'diag_commit();\'>提&nbsp;交</button>');				
+			e.push('</div>');			
+		e.push('</div>');
+	e.push('</div>');
+	/*左侧添加树形*/
+	
+	$("body").append(e.join(''));
+	return true;
+}
+
+function zTree_init_fun(){
+	digId = 0;
+	var setting = {
+		view: {
+			showIcon: false,
+			dblClickExpand: false
+		},
+		data: {
+			simpleData: {
+				enable: true
+			}
+		},
+		callback: {
+			onClick: zTreeOnClick,
+			onDblClick: zTreeOnClickD
+		},
+		async: {
+			enable: true,
+			type : "GET",
+			dataType: "text",
+			url: digUrl + "/DigPacs/getDigPacs.htm",
+			autoParam: ["id=pId"],
+			dataFilter: filter
+		}
+	};
+	//单击展开节点
+	function zTreeOnClick(event, treeId, treeNode) {
+		if(treeNode.type != "rept"){
+			var zTree = $.fn.zTree.getZTreeObj("tree1");
+			zTree.expandNode(treeNode);
+		}
+	};
+	//双击获取详情
+	function zTreeOnClickD(event, treeId, treeNode){
+		if(treeNode.type == "rept"){
+			if(digId != treeNode.id){
+				$.ajax({
+					type : 'GET',
+					url : digUrl + "/DigPacs/getDigPacsDetails.htm",
+					data : 'id=' + treeNode.id,
+					dataType : 'json',
+					success : function(data){
+						//var obj = eval("("+ data + ")");
+						if($("#diag_A").val().replace(/\s+/g,"") != ""){
+							var tempA = $("#diag_A").val() + "\n" + data.A;
+						}else{
+							var tempA = data.A;
+						}
+						if($("#diag_B").val().replace(/\s+/g,"") != ""){
+							var tempB = $("#diag_B").val() + "\n" + data.B;
+						}else{
+							var tempB = data.B;
+						}
+						$("#diag_A").val(tempA);
+						$("#diag_B").val(tempB);
+					},error : function(){
+						layer.msg('获取报告模板失败', {icon: 2, time: 1000});
+					}
+				})
+				digId = treeNode.id;
+			}
+		}
+	};
+		
+	function filter(treeId, parentNode, childNodes) {
+		if (!childNodes) return null;
+		for (var i=0, l=childNodes.length; i<l; i++) {
+			childNodes[i].name = childNodes[i].name.replace(/\.n/g, '.');
+		}
+		return childNodes;
+	}
+	
+	var zNodes = [];
+	$.ajax({
+		type : 'GET',
+		url : digUrl + "/DigPacs/getDigPacs.htm",
+		data : 'pId=0',
+		dataType : 'json',
+		success : function(data){
+			//var obj = eval("("+ data + ")");
+			zNodes = data;
+			$.fn.zTree.init($("#tree1"), setting, zNodes);
+			var zTree = $.fn.zTree.getZTreeObj("tree1");
+			var node = zTree.getNodeByParam("name", openName);
+			zTree.expandNode(node);
+		},error : function(){
+			layer.msg('获取母节点失败', {icon: 2, time: 1000});
+		}
+	})
+}
+
+
+function goPage(id){
+	alert(1);
+}
+//**********************************************************************************************

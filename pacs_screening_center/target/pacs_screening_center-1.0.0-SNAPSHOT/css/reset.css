@@ -1,0 +1,99 @@
+@charset "utf-8";
+/*初始化*/
+body,
+header,
+footer,
+aside,
+nav,
+section,
+article,
+div,
+span,
+i,
+b,
+em,
+strong,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+ul,
+li,
+input,
+select,
+textarea,
+option,
+button,
+th,
+td,
+dl,
+dt,
+dd,
+p,
+form,
+ol,
+label {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: normal;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+li {
+  list-style: none;
+}
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  border: 0;
+  background: none;
+  -webkit-appearance: none;
+  outline: none;
+}
+a {
+  display: block;
+  -webkit-touch-callout: none;
+  text-decoration: none;
+  outline: none;
+}
+em,
+i {
+  font-style: normal;
+}
+img {
+  border: 0 none;
+  vertical-align: middle;
+}
+body {
+  font-family: "microsoft yahei";
+  margin: 0 auto;
+}
+/*公共*/
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: '.';
+  visibility: hidden;
+  clear: both;
+  height: 0;
+  display: block;
+}

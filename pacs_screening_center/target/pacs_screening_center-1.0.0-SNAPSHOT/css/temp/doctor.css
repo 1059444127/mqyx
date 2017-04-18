@@ -1,0 +1,270 @@
+@charset "utf-8";
+/*初始化*/
+body,
+header,
+footer,
+aside,
+nav,
+section,
+article,
+div,
+span,
+i,
+b,
+em,
+strong,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+ul,
+li,
+input,
+select,
+textarea,
+option,
+button,
+th,
+td,
+dl,
+dt,
+dd,
+p,
+form,
+ol,
+label {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: normal;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+li {
+  list-style: none;
+}
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  border: 0;
+  background: none;
+  -webkit-appearance: none;
+  outline: none;
+}
+a {
+  -webkit-touch-callout: none;
+  text-decoration: none;
+  outline: none;
+}
+em,
+i {
+  font-style: normal;
+}
+img {
+  border: 0 none;
+  vertical-align: middle;
+}
+body {
+  font-family: "microsoft yahei";
+  margin: 0 auto;
+}
+/*公共*/
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: '.';
+  visibility: hidden;
+  clear: both;
+  height: 0;
+  display: block;
+}
+.layer{
+	width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+.singleE {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.orange {
+  color: #fd7d00;
+}
+a {
+  color: #333;
+}
+a:hover {
+  text-decoration: none;
+  color: #333;
+}
+body {
+  font-size: 14px;
+}
+
+
+/*头部*/
+.b-header{
+    position: fixed;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    background: #004b99;
+    opacity: 0.8;
+    z-index: 99;
+}
+.logo{
+    margin:  12px 0;
+    width: 300px;
+    height: 35px;
+}
+
+/*医生介绍*/
+.b-middle{
+	margin-top: 100px;
+}
+h2{
+	font-size: 36px;
+	margin-bottom: 30px;
+	text-align: center;
+	color: #004b99;
+}
+.b-middle-left,.b-middle-right{
+	border: 1px #c8c8c8 solid;
+}
+.b-middle-left{
+	float: left;
+	width: 200px;
+	text-align: center;
+	padding: 30px 0 10px;
+	line-height: 30px;
+}
+.b-middle-left dt{
+	margin-bottom: 10px;
+}
+.b-middle-left img{
+	width: 120px;
+    height: 160px;
+}
+.b-middle-left dd{
+	line-height: 30px;
+}
+.name{
+	font-size: 16px;
+	font-weight: bold;
+}
+.b-middle-right{
+	float: right;
+	width: 950px;
+	padding: 40px 30px;
+	line-height: 30px;
+}
+.b-middle-right > li{
+	padding: 15px;
+}
+.b-middle-right > li:not(:last-child){
+	border-bottom: 1px #c8c8c8 solid;
+}
+.doctor-stastic{
+	background: url(/img/icon.jpg) no-repeat 30px 10px;
+	padding-left: 135px!important;
+}
+.doctor-stastic h4{
+	font-size: 18px;
+	line-height: 30px;
+}
+.doctor-stastic h3{
+	font-size: 28px;
+	line-height: 60px;
+}
+.doctor-stastic-data {
+	display: flex;
+	justify-content: flex-end;
+	font-size: 15px;
+	margin: 8px;
+}
+.doctor-stastic-data li{
+	line-height: 30px;
+	padding: 0 15px;
+}
+.doctor-stastic-data li:not(:last-child){
+	border-right: 1px #c8c8c8 solid;
+}
+#hospital{
+	color: #6495ed;
+}
+#total{
+	color: #00bfff;
+}
+#overtime{
+	color: #ed143d;
+}
+#reback{
+	color: #8b008b;
+}
+.doctor-intro{
+	text-indent: 2rem;
+}
+
+.doctor-hospital h3{
+	font-size: 20px;
+	line-height: 40px;
+}
+.doctor-hospital li{
+	float: left;
+    width: 350px;
+    margin: 10px 35px;
+    padding-right: 10px;
+    background: #f8f8ff;
+}
+.doctor-hospital li:hover{
+    background: #e8e8e8;
+}
+.doctor-hospital img{
+    float: left;
+    width: 155px;
+    height: 110px;
+    margin: 10px;
+}
+.doctor-hospital em{
+    line-height: 40px;
+    font-size: 20px;
+}
+.doctor-hospital p{
+	line-height: 25px;
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+
+
+
+/*尾部*/
+.b-footer{
+    margin-top: 80px;
+    padding: 15px 0;
+    line-height: 25px;
+    background: #f1f1f1;
+    text-align: center;
+}

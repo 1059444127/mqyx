@@ -1,0 +1,72 @@
+<link rel="stylesheet" href="/css/temp/doctor.css" />
+		<header class="b-header">
+            <div class="layer">
+                <img class="logo" src="/img/login/logo.png">
+            </div>
+        </header>
+		
+		<div class="b-middle layer clearfix">
+			<h2>梅清影像医生服务平台</h2>
+			<dl class="b-middle-left">
+                <dt><img src="/img/tempdoc/1.png" alt=""/></dt>
+                <dd class="name">石明国</dd>
+                <dd>西京医院</dd>
+                <dd class="orange" style="cursor: pointer;">关注医生+</dd>
+			</dl>
+			<ul class="b-middle-right">
+				<li class="doctor-stastic">
+					<h4>所在医院：</h4>
+					<h3>西京医院第四军医大学第一附属医院</h3>
+					<ul class="doctor-stastic-data">
+						<li id="hospital">已签约医院<span>1</span>家</li>
+						<li id="total">总诊断数：<span>98</span>条</li>
+						<li id="overtime">超时数：<span>0</span>条</li>
+						<li id="reback">回退数：<span>1</span>条</li>
+					</ul>
+				</li>
+				<li class="doctor-intro">石明国教授在我国CT影像技术界享有较高声誉，从事CT影像技术工作30余年，是我国首批从事CT影像技术工作者，也是我院第一台CT的践行者。早在1995年就主编出版了我国第一部《实用CT影像技术学》专著，并获优秀科技图书一等奖。1996年即被中华医学会选为全国大型设备（CT）上岗培训专用教材，为我国培养了一大批CT影像技术人才，为CT影像技术事业的发展作出了积极地贡献，也提高了我院的影响力。</li>
+				<li class="doctor-hospital">
+					<h3>签约医院</h3>
+					<ul class="clearfix">
+                        <li>
+                            <a href="/temp/temphos.htm" >
+                                <img src="/img/temphos/lv1.png" alt=""/>
+                                <em>绿城口腔医院</em>
+                                <p>杭州绿城口腔医院是集口腔健康预防、治疗、美容、保健为一体的综合性现代化口腔医院。医院坐落于浙江杭州市，由名列中国房地产公司品牌价值TOP10的绿城集团控股投资建设，毗邻西湖景区。医院服务项目齐全，设有牙周病科、口腔颌面外科、口腔预防、口腔修复、等重点科室，并以儿童口腔、口腔种植、口腔正畸为特色，与国内外多所知名口腔专业院校保持良好合作，为广大市民提供贴心、舒心、放心的优质口腔医疗服务。</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/temp/temphos.htm">
+                                <img src="/img/temphos/lv3.png" alt=""/>
+                                <em>绿城青山湖分院</em>
+                                <p>医院始终遵循绿城集团“真诚、善意、精致、完美”的核心价值观，认真履行对社会的责任和义务。经过多年的探索与实践，医院坚持以质量为核心，引进现代技术，科学运用现代设备，为百余万人提供了优质的医疗服务，逐步发展成为文化先进、管理全面、团队过硬、作风优良、具有独到特色的现代化医院。如今正朝着更好地服务人民，造福社会，做中国最好的民营医院这一宏伟目标迈进！</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/temp/temphos.htm">
+                                <img src="/img/temphos/hospital.jpg" alt=""/>
+                                <em>西京医院</em>
+                                <p>西京医院坐落在美丽的古都西安，为第四军医大学第一附属医院，前身是1939年延安抗战岁月里诞生的中央医院，1954年与原第五军医大学附属医院合并。医院始终秉承践行宗旨、救死扶伤</p>
+                            </a>
+                        </li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		
+		
+        <footer class="b-footer">
+            <div class="layer">
+                <div class="b-footer-us">
+                    <a href="">关于我们</a>|
+                    <a href="">联系我们</a>|
+                    <a href="">加入我们</a>
+                </div>
+                <div class="b-footer-content">
+                    Copyright &nbsp;(C)&nbsp;杭州梅清数码科技有限公司 &nbsp;&nbsp;地址：&nbsp;杭州市高新区（滨江）西湘路66号&nbsp;&nbsp;咨询电话：0571-86057861
+                </div>
+                <div class="b-footer-information">
+                    <span id="support">技术支持：<i class="hn_copy_icon"></i>杭州梅清数码科技有限公司&nbsp;&nbsp;访问统计 :&nbsp;&nbsp;<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261014197'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1261014197%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script><span id="cnzz_stat_icon_1261014197"><a href="http://www.cnzz.com/stat/website.php?web_id=1261014197" target="_blank" title="站长统计"><img border="0" hspace="0" vspace="0" src="http://icon.cnzz.com/img/pic1.gif"></a></span><script src=" http://s11.cnzz.com/z_stat.php?id=1261014197&amp;show=pic1" type="text/javascript"></script><script src="http://c.cnzz.com/core.php?web_id=1261014197&amp;show=pic1&amp;t=z" charset="utf-8" type="text/javascript"></script></span>
+                </div>
+            </div>
+        </footer>

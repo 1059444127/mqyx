@@ -1,0 +1,458 @@
+@charset "utf-8";
+/*初始化*/
+body,
+header,
+footer,
+aside,
+nav,
+section,
+article,
+div,
+span,
+i,
+b,
+em,
+strong,
+img,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+ul,
+li,
+input,
+select,
+textarea,
+option,
+button,
+th,
+td,
+dl,
+dt,
+dd,
+p,
+form,
+ol,
+label {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: normal;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+li {
+  list-style: none;
+}
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  border: 0;
+  background: none;
+  -webkit-appearance: none;
+  outline: none;
+}
+a {
+  -webkit-touch-callout: none;
+  text-decoration: none;
+  outline: none;
+}
+em,
+i {
+  font-style: normal;
+}
+img {
+  border: 0 none;
+  vertical-align: middle;
+}
+body {
+  font-family: "microsoft yahei";
+  margin: 0 auto;
+}
+/*公共*/
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: '.';
+  visibility: hidden;
+  clear: both;
+  height: 0;
+  display: block;
+}
+.singleE {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.orange {
+  color: #fd7d00;
+}
+a {
+  color: #333;
+}
+a:hover {
+  text-decoration: none;
+  color: #333;
+}
+body {
+  font-size: 14px;
+}
+.inputWrapper label {
+  display: inline-block;
+  line-height: 30px;
+}
+.inputWrapper input {
+  height: 30px;
+  padding: 5px;
+  border: #c8c8c8 1px solid;
+  border-radius: 6px;
+  font-size: 14px;
+}
+.input-s {
+  width: 85px;
+}
+.input-m {
+  width: 180px;
+}
+.input-l {
+  width: 500px;
+}
+.layer{
+    width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.b-header{
+    position: fixed;
+    top: 0;
+    height: 60px;
+    width: 100%;
+    background: #004B99;
+	opacity: 0.8;
+    z-index: 99;
+}
+/* .b-header img{
+	margin: 13px 74px;
+    width: 300px;
+    height: 35px;
+} */
+.b-middle{
+    margin-top: 60px;
+}
+.mq-login{
+    width: 100%;
+    height: 400px;
+    background: url(/img/login/bg.jpg) no-repeat center;
+    background-size:100% 100%;
+}
+.mq-login h2{
+    float: left;
+    /* line-height: 400px; */
+    margin-top: 106px;
+    color: #009944;
+    font-size: 60px;
+}
+.loginBox {
+    float: right;
+    margin-top: 50px;
+    width: 310px;
+    height: 300px;
+    background: #fff;
+    border-radius: 8px;
+    opacity: 0.9;
+}
+.loginBox .title {
+  line-height: 60px;
+  background: gray;
+  border-radius: 8px 8px 0 0;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+}
+.loginBox form {
+  padding-top: 20px;
+}
+.loginBox .inputWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.loginBox .inputWrapper label {
+  text-align: right;
+  font-size: 15px;
+}
+.loginBox .inputWrapper input {
+  margin-left: 10px;
+}
+.loginBox .inputWrapper #idCode {
+  width: 85px;
+  height: 30px;
+  margin-left: 10px;
+  background: #ddd;
+  cursor: pointer;
+}
+.loginBox .inputWrapper input[type="button"] {
+  width: 170px;
+  height: 40px;
+  background: #fba432;
+  color: #fff;
+}
+.sp{
+    margin-bottom: 0!important;
+}
+.tips{
+    text-align: center;
+    display: inherit;
+    line-height: 30px;
+	height: 30px;
+    color: red;
+}
+
+.mq-statistic li{
+    /* float: left; */
+    width: 100px;
+    /* margin: 20px 78px; */
+    margin: 20px auto;
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+}
+.mq-statistic i{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: url("/img/login/checkup.png") no-repeat;
+}
+.mq-statistic span{
+    display: inline-block;
+    width: 100px;
+    font-size: 20px;
+    /*line-height: 30px;*/
+}
+.mq-statistic small{
+    font-size: 14px;
+}
+
+.mq-title{
+    font-size: 20px;
+    line-height: 30px;
+    border-bottom: 2px #009944 solid;
+    margin: 30px 0;
+}
+.mq-title span{
+    display: inline-block;
+    color: #fff;
+    padding: 0 10px;
+    background: #009944;
+}
+.mq-title a{
+    font-size: 14px;
+    float: right;
+    margin-right: 20px;
+}
+
+.mq-hospital{
+    margin-bottom: 50px;
+}
+.mq-hospital-main{
+    width: 100%;
+    overflow: hidden;
+}
+.wrapper{
+    width: 10000%;
+    height: 240px;
+}
+.mq-hospital-main ul{
+    width: 1%;
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.mq-hospital-main li{
+    width: 370px;
+    height: 100px;
+    margin: 10px;
+    padding-right: 10px;
+    background: #f8f8ff;
+}
+.mq-hospital-main li:hover{
+    background: #e8e8e8;
+}
+.mq-hospital-main img{
+    float: left;
+    width: 130px;
+    height: 80px;
+    margin: 10px;
+}
+.mq-hospital-main em{
+    line-height: 50px;
+    font-size: 20px;
+}
+.mq-hospital-main p{
+    overflow : hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.mq-hospital-point{
+    display: flex;
+    justify-content: center;
+}
+.mq-hospital-point li{
+    width: 12px;
+    height: 12px;
+    margin: 5px;
+    background: #696969;
+
+}
+.mq-hospital-point li:hover,.mq-hospital-point .current{
+    background: #006dcc;
+}
+
+.mq-doctor1 ul{
+    display: flex;
+    justify-content: space-between;
+}
+.mq-doctor1 li{
+    width: 190px;
+    height: 300px;
+    border: 1px #e8e8e8 solid;
+    text-align: center;
+}
+.mq-doctor1 li:hover{
+    background: #e8e8e8;
+}
+.mq-doctor1 dt{
+    margin: 20px auto 10px;
+    text-align: center;
+}
+.mq-doctor1 img{
+    width: 120px;
+    height: 160px;
+    background: #fff;
+}
+.mq-doctor1 dd{
+    line-height: 30px;
+}
+
+
+.b-footer{
+    margin-top: 80px;
+    padding: 15px 0;
+    line-height: 25px;
+    background: #f1f1f1;
+    text-align: center;
+}
+
+.personBox{
+	padding: 45px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.personBox dl{
+	font-size: 17px;
+}
+.personBox dt{
+	float: left;
+	margin-right: 10px;
+}
+.personBox img{
+	width: 70px;
+	height: 70px;
+	cursor: pointer;
+}
+.personBox dd{
+	line-height: 35px;
+}
+.changeId{
+	cursor: pointer;
+	font-size: 15px;
+}
+.person-btn{
+	display: flex;
+	justify-content: space-around;
+}
+.person-btn div{
+	width: 82px;
+	line-height: 35px;
+	text-align: center;
+	border-radius: 5px;
+	background: #004b99;
+	color: #fff;
+	cursor: pointer;
+}
+.fullscreen{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    position: fixed;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.popup{
+		width: 420px;
+    background: #fff;
+    border: 1px solid #ebeaea;
+    padding-bottom: 50px;
+    border-radius: 10px;
+}
+.pop-head{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 50px;
+	font-size: 25px;
+	width: 100%;
+	line-height: 50px;
+	background: #E3E3E3;
+	border-bottom: 1px solid #ebeaea;
+	margin-bottom: 40px;
+	border-radius: 10px 10px 0 0;
+}
+.pop-head i{
+	cursor: pointer;
+}
+.pop-main > div {
+	margin: 25px 0;
+	display: flex;
+	justify-content: center;
+}
+.pop-main input[type="button"]{
+	width: 100px;
+	line-height: 35px;
+	background: #004b99;
+	color: #fff;
+	margin-top: 5px;
+	border-radius: 5px;
+}
+.mq-statistic {
+display: flex;
+justify-content: space-around;
+}
+.logo{
+	margin:12px 0;
+	width:300px;
+	height:35px;
+}

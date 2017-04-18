@@ -1,0 +1,263 @@
+<link rel="stylesheet" href="/css/login/login.css" />
+<!--         <header class="b-header">
+            <div class="layer">
+			<div>
+                <img src="/img/login/logo.png">
+            </div>
+        </header> -->
+		<header class="b-header">
+            <div class="layer">
+                <img class="logo" src="/img/login/logo.png">
+            </div>
+        </header>
+        <div class="b-middle">
+            <div class="mq-login">
+                <div class="layer">
+                    <h2><img src="/img/login/title-text.png" alt=""/></h2>
+                    <div class="loginBox personBox">
+                    	<dl>
+                    		<dt><img src="$!ui.photoPath" alt="" /></dt>
+                    		<dd>欢迎你，<span class="orange">$!ui.realName</span>！</dd>
+                    		<dd class="changeId">修改密码</dd>
+                    	</dl>
+                    	<div class="person-btn">
+                    		<div onclick="window.location.href='$!ug.mainSrc'">个人中心</div>
+                    		<div onclick="window.location.href='/login/loginIndex.htm'">退出登录</div>
+                    	</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="layer">
+                <ul class="mq-statistic clearfix">
+                    <li><i style="background: url(/img/login/checkup3.png) no-repeat;"></i>已加入医院<span>41<small>家</small></span></li>
+                    <li><i style="background: url(/img/login/checkup2.png) no-repeat;"></i>加入医生<span>78<small>人</small></span></li>
+                    <li><i></i>总会诊量<span>1798<small>例</small></span></li>
+                    <li><i></i>今日新增会诊<span>147<small>例</small></span></li>
+                </ul>
+                <div class="mq-hospital">
+                    <div class="mq-hospital-main">
+                        <h3 class="mq-title"><span>签约医院</span></h3>
+                        <div class="wrapper">
+                            <ul>
+                                 <li>
+                                    <a href="/temp/temphos.htm" target="_blank">
+                                        <img src="/img/temphos/lv1.png" alt=""/>
+                                        <em>绿城口腔医院</em>
+                                        <p>杭州绿城口腔医院是集口腔健康预防、治疗、美容、保健为一体的综合性现代化口腔医院。医院坐落于浙江杭州市，由名列中国房地产公司品牌价值TOP10的绿城集团控股投资建设，毗邻西湖景区。医院服务项目齐全，设有牙周病科、口腔颌面外科、口腔预防、口腔修复、等重点科室，并以儿童口腔、口腔种植、口腔正畸为特色，与国内外多所知名口腔专业院校保持良好合作，为广大市民提供贴心、舒心、放心的优质口腔医疗服务。</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/temp/temphos.htm" target="_blank">
+                                        <img src="/img/temphos/lv2.png" alt=""/>
+                                        <em>绿城蓝庭护理院</em>
+                                        <p>根据杭州市2010年打造生活品质之城的一大趋势—让杭州老人把幸福写在脸上，全市形成“敬老、爱老、养老、助老”的美好氛围和环境。根据绿城集团的理念，在绿城园区服务体系中，将提升老人服务事业作为园区服务的重要内容，同时为了满足蓝庭业主不断增加的医疗需求，在绿城蓝庭园区内设置护理院，将为蓝庭业主和周边地区的居民提供医疗保健康复服务。 　　绿城蓝庭护理院位于蓝庭花园东区陶院颐养公寓一楼，以浙江绿城医院为坚强后盾，分为门诊部和老年护理院两部分，总面积约3112平方米，其中1、2层门诊部约300平方米，1层另设康复室约92平方米，2层另设护洗中心约120平方米，3、4层老年护理院约2600平方米。门诊设置全科、中医科、针灸推拿科、口腔科、心电图室、B超室、输液室、康复室、护洗中心等，配备彩色B超仪、动态血压、心电图机、血尿分析仪、全景牙片机、牙科点片机等先进医疗设备。 　　康复中心环境舒适，配备了多项康复训练器械：减重步态训练器、电动起立床、多功能网架、下肢功率车、辅助步行训练器、平行杆、三维微波治疗仪训练用扶梯、可调式磨砂板及附件、平衡协调功能训练器、作业治疗器、自动温热间歇牵引床、上下肢及各种关节训练器等，以上各项康复训练器材完全能满足肢体运动障碍的作业治疗和运动治疗的需求。 　　护洗中心设备先进，处处体现人性化服务细节，分男、女护洗室和自动护洗室三间。男女护洗室各配有两台走入式浴缸，设置了老年人安全防滑设施、淋浴扶手等，对行动不便的宾客有专业护理员全程陪同。自动护洗室配备日本产HK-217/ RA-191型升降移动气泡浴槽洗浴系统，具有移送患者及洗浴双重功能，系华东地区首家拥有，适合生活完全不能自理的宾客洗浴。 　　老年护理院位于3、4层，每层15间病房、30个床位，病房设施、服务为五星级宾馆式，室内设有会客厅、可视信息触摸屏、无障碍通道，电源开关居地面仅0.9米,便于坐在轮椅的宾客使用，卫生间设有安全扶手，另配有日本进口应急呼叫器，充分体现了人性化服务。病房配有：心电监护仪、除颤器、气压床垫简易呼吸机、电动吸引器、超声雾化器　。</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/temp/temphos.htm" target="_blank">
+                                        <img src="/img/temphos/lv3.png" alt=""/>
+                                        <em>绿城青山湖分院</em>
+                                        <p> 医院始终遵循绿城集团“真诚、善意、精致、完美”的核心价值观，认真履行对社会的责任和义务。经过多年的探索与实践，医院坚持以质量为核心，引进现代技术，科学运用现代设备，为百余万人提供了优质的医疗服务，逐步发展成为文化先进、管理全面、团队过硬、作风优良、具有独到特色的现代化医院。如今正朝着更好地服务人民，造福社会，做中国最好的民营医院这一宏伟目标迈进！</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/temp/temphos.htm" target="_blank">
+                                        <img src="/img/temphos/lv4.png" alt=""/>
+                                        <em>文新中医门诊部</em>
+                                        <p>浙江绿城心血管病医院（浙江绿城医院）由绿城集团控股投资建设，于2007年11月开业。医院位于杭州市西湖区文新区块，毗邻杭州西湖景区，是以心血管病专科为特色的非营利性医院，省、市医保定点单位，省异地就医联网结算（一卡通）定点医疗机构，核定床位300张，设有26个临床与医技科室。 
+医院拥有以全国顶尖心血管病专家沈法荣教授、心外科专家朱雄凯教授为核心的专家团队，可熟练开展各类介入治疗术和各类心脏外科手术，心脏起搏技术处全国领先水平。该专科于2013年被列入浙江省首批非公立医疗机构临床特色学科建设计划。 
+医院设备先进，引入GE64排螺旋CT、西门子1.5T磁共振、DSA、DR、高档数字乳腺机等现代化医疗设备；重症监护病房、中心供应室、手术室均按“三甲”医院标准配备；全数字化信息管理系统属省内领先。2010年医院被国家卫生部列为全国临床路径试点医院和全国电子病历试点医院。 
+医院重视人才培养和学术建设，以高水平、高起点、高素质、高技能的“四高”原则，先后引进数十名重点学科人才。医院环境清雅、设施齐全，设有多档次病房、酒店式贵宾套间、屋顶花园，为宾客提供舒心放松的就医环境。 
+医院始终遵循绿城集团“真诚、善意、精致、完美”的核心价值观，认真履行对社会的责任和义务。经过六年多的探索与实践，医院坚持以质量为核心，引进现代技术，科学运用现代设备，为百余万人提供了优质的医疗服务，逐步发展成为文化先进、管理全面、团队过硬、作风优良、具有独到特色的现代化医院。如今正朝着更好地服务人民，造福社会，做中国最好的民营医院这一宏伟目标迈进！</p>
+                                    </a>
+                                </li>
+                               	<li>
+                                    <a href="/temp/temphos.htm" target="_blank">
+                                        <img src="/img/temphos/hospital.jpg" alt=""/>
+                                        <em>西京医院</em>
+                                        <p>西京医院坐落在美丽的古都西安，为第四军医大学第一附属医院，前身是1939年延安抗战岁月里诞生的中央医院，1954年与原第五军医大学附属医院合并。医院始终秉承践行宗旨、救死扶</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/temp/temphos.htm" target="_blank">
+                                        <img src="/img/temphos/4.png" alt=""/>
+                                        <em>301医院</em>
+                                        <p>创建于1953年，是集医疗、保健、教学、科研于一体的大型现代化综合性医院。医院是中央重要保健基地，承担军委、总部等多个体系单位、官兵的医...</p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul>
+                                 <li>
+                                    <a href="/temp/temphos.htm" target="_blank">
+                                        <img src="/img/temphos/lv1.png" alt=""/>
+                                        <em>绿城口腔医院</em>
+                                        <p>杭州绿城口腔医院是集口腔健康预防、治疗、美容、保健为一体的综合性现代化口腔医院。医院坐落于浙江杭州市，由名列中国房地产公司品牌价值TOP10的绿城集团控股投资建设，毗邻西湖景区。医院服务项目齐全，设有牙周病科、口腔颌面外科、口腔预防、口腔修复、等重点科室，并以儿童口腔、口腔种植、口腔正畸为特色，与国内外多所知名口腔专业院校保持良好合作，为广大市民提供贴心、舒心、放心的优质口腔医疗服务。</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/temp/temphos.htm" target="_blank">
+                                        <img src="/img/temphos/lv2.png" alt=""/>
+                                        <em>绿城蓝庭护理院</em>
+                                        <p>根据杭州市2010年打造生活品质之城的一大趋势—让杭州老人把幸福写在脸上，全市形成“敬老、爱老、养老、助老”的美好氛围和环境。根据绿城集团的理念，在绿城园区服务体系中，将提升老人服务事业作为园区服务的重要内容，同时为了满足蓝庭业主不断增加的医疗需求，在绿城蓝庭园区内设置护理院，将为蓝庭业主和周边地区的居民提供医疗保健康复服务。 　　绿城蓝庭护理院位于蓝庭花园东区陶院颐养公寓一楼，以浙江绿城医院为坚强后盾，分为门诊部和老年护理院两部分，总面积约3112平方米，其中1、2层门诊部约300平方米，1层另设康复室约92平方米，2层另设护洗中心约120平方米，3、4层老年护理院约2600平方米。门诊设置全科、中医科、针灸推拿科、口腔科、心电图室、B超室、输液室、康复室、护洗中心等，配备彩色B超仪、动态血压、心电图机、血尿分析仪、全景牙片机、牙科点片机等先进医疗设备。 　　康复中心环境舒适，配备了多项康复训练器械：减重步态训练器、电动起立床、多功能网架、下肢功率车、辅助步行训练器、平行杆、三维微波治疗仪训练用扶梯、可调式磨砂板及附件、平衡协调功能训练器、作业治疗器、自动温热间歇牵引床、上下肢及各种关节训练器等，以上各项康复训练器材完全能满足肢体运动障碍的作业治疗和运动治疗的需求。 　　护洗中心设备先进，处处体现人性化服务细节，分男、女护洗室和自动护洗室三间。男女护洗室各配有两台走入式浴缸，设置了老年人安全防滑设施、淋浴扶手等，对行动不便的宾客有专业护理员全程陪同。自动护洗室配备日本产HK-217/ RA-191型升降移动气泡浴槽洗浴系统，具有移送患者及洗浴双重功能，系华东地区首家拥有，适合生活完全不能自理的宾客洗浴。 　　老年护理院位于3、4层，每层15间病房、30个床位，病房设施、服务为五星级宾馆式，室内设有会客厅、可视信息触摸屏、无障碍通道，电源开关居地面仅0.9米,便于坐在轮椅的宾客使用，卫生间设有安全扶手，另配有日本进口应急呼叫器，充分体现了人性化服务。病房配有：心电监护仪、除颤器、气压床垫简易呼吸机、电动吸引器、超声雾化器　。</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/temp/temphos.htm" target="_blank">
+                                        <img src="/img/temphos/lv3.png" alt=""/>
+                                        <em>绿城青山湖分院</em>
+                                        <p> 医院始终遵循绿城集团“真诚、善意、精致、完美”的核心价值观，认真履行对社会的责任和义务。经过多年的探索与实践，医院坚持以质量为核心，引进现代技术，科学运用现代设备，为百余万人提供了优质的医疗服务，逐步发展成为文化先进、管理全面、团队过硬、作风优良、具有独到特色的现代化医院。如今正朝着更好地服务人民，造福社会，做中国最好的民营医院这一宏伟目标迈进！</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/temp/temphos.htm" target="_blank">
+                                        <img src="/img/temphos/lv4.png" alt=""/>
+                                        <em>文新中医门诊部</em>
+                                        <p>浙江绿城心血管病医院（浙江绿城医院）由绿城集团控股投资建设，于2007年11月开业。医院位于杭州市西湖区文新区块，毗邻杭州西湖景区，是以心血管病专科为特色的非营利性医院，省、市医保定点单位，省异地就医联网结算（一卡通）定点医疗机构，核定床位300张，设有26个临床与医技科室。 
+医院拥有以全国顶尖心血管病专家沈法荣教授、心外科专家朱雄凯教授为核心的专家团队，可熟练开展各类介入治疗术和各类心脏外科手术，心脏起搏技术处全国领先水平。该专科于2013年被列入浙江省首批非公立医疗机构临床特色学科建设计划。 
+医院设备先进，引入GE64排螺旋CT、西门子1.5T磁共振、DSA、DR、高档数字乳腺机等现代化医疗设备；重症监护病房、中心供应室、手术室均按“三甲”医院标准配备；全数字化信息管理系统属省内领先。2010年医院被国家卫生部列为全国临床路径试点医院和全国电子病历试点医院。 
+医院重视人才培养和学术建设，以高水平、高起点、高素质、高技能的“四高”原则，先后引进数十名重点学科人才。医院环境清雅、设施齐全，设有多档次病房、酒店式贵宾套间、屋顶花园，为宾客提供舒心放松的就医环境。 
+医院始终遵循绿城集团“真诚、善意、精致、完美”的核心价值观，认真履行对社会的责任和义务。经过六年多的探索与实践，医院坚持以质量为核心，引进现代技术，科学运用现代设备，为百余万人提供了优质的医疗服务，逐步发展成为文化先进、管理全面、团队过硬、作风优良、具有独到特色的现代化医院。如今正朝着更好地服务人民，造福社会，做中国最好的民营医院这一宏伟目标迈进！</p>
+                                    </a>
+                                </li>
+                               	<li>
+                                    <a href="/temp/temphos.htm" target="_blank">
+                                        <img src="/img/temphos/hospital.jpg" alt=""/>
+                                        <em>西京医院</em>
+                                        <p>西京医院坐落在美丽的古都西安，为第四军医大学第一附属医院，前身是1939年延安抗战岁月里诞生的中央医院，1954年与原第五军医大学附属医院合并。医院始终秉承践行宗旨、救死扶</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/temp/temphos.htm" target="_blank">
+                                        <img src="/img/temphos/4.png" alt=""/>
+                                        <em>301医院</em>
+                                        <p>创建于1953年，是集医疗、保健、教学、科研于一体的大型现代化综合性医院。医院是中央重要保健基地，承担军委、总部等多个体系单位、官兵的医...</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="mq-hospital-point" target="_blank">
+                        <li class="current"></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="mq-doctor1">
+                    <h3 class="mq-title"><span>推荐医生</span><a href="">更多>></a></h3>
+                    <ul>
+                        <li>
+                            <a href="/temp/tempdoc.htm" target="_blank">
+                                <dl>
+                                    <dt><img src="/img/tempdoc/1.png" alt=""/></dt>
+                                    <dd>石明国</dd>
+                                    <dd>签约机构1</dd>
+                                    <dd>会诊数：98，回退数：1</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/temp/tempdoc.htm" target="_blank">
+                                <dl>
+                                    <dt><img src="/img/tempdoc/2.png" alt=""/></dt>
+                                    <dd>余岂</dd>
+                                    <dd>签约机构1</dd>
+                                    <dd>会诊数：32，回退数：3</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/temp/tempdoc.htm" target="_blank">
+                                <dl>
+                                    <dt><img src="/img/tempdoc/3.png" alt=""/></dt>
+                                    <dd>葛城</dd>
+                                    <dd>签约机构1</dd>
+                                    <dd>会诊数：25，回退数：1</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/temp/tempdoc.htm" target="_blank">
+                                <dl>
+                                    <dt><img src="/img/tempdoc/4.png" alt=""/></dt>
+                                    <dd>徐林</dd>
+                                    <dd>签约机构1</dd>
+                                    <dd>会诊数：33，回退数：7</dd>
+                                </dl>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/temp/tempdoc.htm" target="_blank">
+                                <dl>
+                                    <dt><img src="/img/tempdoc/5.png" alt=""/></dt>
+                                    <dd>王国一</dd>
+                                    <dd>签约机构1</dd>
+                                    <dd>会诊数：24，回退数：2</dd>
+                                </dl>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mq-doctor2">
+
+                </div>
+            </div>
+        </div>
+
+        <footer class="b-footer">
+            <div class="layer">
+                <div class="b-footer-us">
+                    <a href="">关于我们</a>|
+                    <a href="">联系我们</a>|
+                    <a href="">加入我们</a>
+                </div>
+                <div class="b-footer-content">
+                    Copyright &nbsp;(C)&nbsp;杭州梅清数码科技有限公司 &nbsp;&nbsp;地址：&nbsp;杭州市高新区（滨江）西湘路66号&nbsp;&nbsp;咨询电话：0571-86057861
+                </div>
+                <div class="b-footer-information">
+                    <span id="support">技术支持：<i class="hn_copy_icon"></i>杭州梅清数码科技有限公司&nbsp;&nbsp;访问统计 :&nbsp;&nbsp;<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261014197'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1261014197%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script><span id="cnzz_stat_icon_1261014197"><a href="http://www.cnzz.com/stat/website.php?web_id=1261014197" target="_blank" title="站长统计"><img border="0" hspace="0" vspace="0" src="http://icon.cnzz.com/img/pic1.gif"></a></span><script src=" http://s11.cnzz.com/z_stat.php?id=1261014197&amp;show=pic1" type="text/javascript"></script><script src="http://c.cnzz.com/core.php?web_id=1261014197&amp;show=pic1&amp;t=z" charset="utf-8" type="text/javascript"></script></span>
+                </div>
+            </div>
+        </footer>
+        <div class="fullscreen" style="display: none;">
+        	<div class="popup">
+        		<div class="pop-head">
+        			<span>修改密码</span><i class="closediv">X</i>
+        		</div>
+        		<form class="pop-main">
+        			<div class="inputWrapper"><label>请输入原密码：</label><input class="input-m" type="password" value="" id="password"/></div>
+                    <div class="inputWrapper"><label>请输入新密码：</label><input class="input-m" type="password" value="" id="newPassword"/></div>
+                    <div class="inputWrapper"><label>请确认新密码：</label><input class="input-m" type="password" value="" id="newPasswordAgain"/></div>
+                    <div><input id="eup" type="button" value="确认提交" onclick="editUserPassword('$!uc.userName')"/></div>
+        		</form>
+        	</div>
+        </div>
+ <script type="text/javascript">
+	$(document).ready(function() {
+		$("#idCode").click(function() {
+		    $("#idCode").attr("src", "/code/getAuthCode.htm?" + Math.floor(Math.random() * 100000 + 1));
+		});
+	})
+</script>
+<script type="text/javascript" src="/js/login/login.js"></script>
+<script type="text/javascript" src="/js/login/lb.js"></script>
+<script type="text/javascript">
+$('.changeId').click(function(){
+	$('.fullscreen').show();
+})
+
+$('.closediv').click(function(){
+	$('.fullscreen').hide();
+	$("#password").val("");
+	$("#newPassword").val("");
+	$("#newPasswordAgain").val("");
+})
+
+	$("body").keydown(function(event) {
+             if (event.keyCode == "13") {//keyCode=13是回车键
+            	 if($('.fullscreen').is(':hidden')){
+            		 return false;
+            	 }
+            	 $("#eup").click();
+             }
+         });
+</script>

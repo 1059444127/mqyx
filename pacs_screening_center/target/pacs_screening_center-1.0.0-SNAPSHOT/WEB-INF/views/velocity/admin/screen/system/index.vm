@@ -1,0 +1,92 @@
+<link type="text/css" rel="stylesheet" href="/css/index.css"/>
+<style>
+*{margin:0;padding:0;border:0;}
+body{width:100%;height:auto;background:#1c2b35;font-family:"microsoft yahei";}
+li{list-style:none;}
+a{text-decoration:none;color:#FFF}
+a:hover{text-descration:none}
+.top{background-color:#3b485c;width:98%;height:60px;overflow-x:hidden}
+.head-left{width:300px;margin-left:20px;float:left;height:56px;padding-top:10px}
+.head-left .logo-name{float:left;font-size:20.47px;line-height:29px;color:#fff;margin-left:10px;font-weight:bold;display:block;cursor:pointer;}
+.head-right{float:right;height:56px;font-size:16px;font-family:"微软雅黑";color:#000;position:relative;left:3px;}
+.head-right .userheadimg ,.usermsg,.exitact{float:left;color:#a6a6a6;font-size:14px;}
+.head-right .userheadimg{margin-top:15px;margin-right:10px}
+.head-right .usermsg{margin-right:35px;margin-top:18px}
+.head-right .usermsg .username{color:#a8acb3;}
+.head-right  .exitact{width:60px;height:60px;border-left: solid 2px #3D3D3D;}
+.cont .cont-menu{float:left:}
+.cont .cont-cont{float:left:}
+.linav{display:inline-block;color:#a8acb3;font-size:16px;display:inline}
+.lipadding{padding:0 23px;cursor:pointer;}
+.navpos{position:relative;top:2px;}
+.xuanzhong{
+	position: absolute;
+	top: 45px;
+	left: 390px;
+}
+.right_td{background: #666;filter: alpha(opacity = 50);-moz-opacity: 0.5;-khtml-opacity: 0.5;opacity: 0.5;}
+.bangzhu{color:#a8acb3;}
+.bangzhu:hover{color:#fff;}
+
+.bot{width:100%;background:#1c2b35;}
+.bot .bot-main{width:74%;background:#1c2b35;margin:auto;padding-top:15px;color:#4a5f6d;font-size:12px;}
+.bot .bot-main .links{color:#547184;font-weight:bold;font-size:12px;}
+.bot .bot-main .hos{color:#4a5f6d;font-size:12px;margin-top:10px;}
+.bot .bot-main a{color:#4a5f6d;font-size:11px;margin:0 2px} 
+.bot .bot-main .company{margin-top:20px;width:100%;text-align:center;}
+.screen {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height:9999px;
+	z-index: 1000;
+	background: #666;
+	filter: alpha(opacity = 50);
+	-moz-opacity: 0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+}
+</style>
+
+<body style="background:#eeeff3">
+    <div class="cont" id="cont" style="width:100%;overflow:hidden;">
+      <table style="width:100%;height:auto;border:0" cellspacing="0" cellpadding="0">
+        <tr>
+           <td style="width:200px;background:#eeeff3;position:relative;"> 
+             <iframe src="menu.htm" style="  position:fixed;width: 200px;top: 0;" name="menu" id="ifr1" frameborder="0" scrolling="no"
+             onload="this.height=this.contentWindow.document.documentElement.scrollHeight">
+	         </iframe>
+           </td>
+           <td style="background:#fff;" id="right_td">
+              <iframe  src="" style="width:100%;height:auto;" frameborder="0" scrolling="auto" id="content" name="content"
+               onload="this.height=this.contentWindow.document.documentElement.scrollHeight">
+             </iframe>
+           </td>
+        </tr>
+      </table>
+    </div>
+</body>
+<script type="text/javascript" language="javascript"> 
+$("#content").load(function() {
+    /* var clientHeight = $("#content").contents().find("body").height(); */
+    var clientHeight = $(window).height()-5;
+    $(this).height(clientHeight);
+    $('#ifr1').height(clientHeight);
+    $("td").css("height",clientHeight);
+    /* $("#cont").css("height",clientHeight);
+    $("body").css("height",clientHeight); */
+});
+var login_url = "$!pt_url";
+#if("$!callbackurl" != "")
+login_url = "$!callbackurl";
+#else
+#end
+setCookie("login_url", login_url);
+function setCookie(name, value){
+	var Days = 30;
+	var exp = new Date();
+	exp.setTime(exp.getTime() + Days*24*60*60*1000);
+	document.cookie = name + "="+ escape (value) + ";expires=" + exp.toGMTString();
+}
+</script>

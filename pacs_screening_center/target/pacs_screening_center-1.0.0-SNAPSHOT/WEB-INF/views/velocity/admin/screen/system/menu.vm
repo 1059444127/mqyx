@@ -1,0 +1,53 @@
+<link type="text/css" rel="stylesheet" href="/css/sxzz/hosmenu.css"/>
+<div id="topic3">
+	<ul style="width:172px;margin-top:13px;madrgin-left:auto;margin-right:auto;clear:both;" >
+		#foreach($menu in $!menuArray)
+			<li class="litopic" onclick="gotoUrlNew(this, '$menu.featureUrl','content')"b1="$menu.unCheckedIcon" b2="$menu.checkedIcon" id="$menu.featureId">
+				<div class="topicbg" style="background:url($menu.unCheckedIcon) no-repeat;"></div><span class="topic">$menu.featureName</span>
+			</li>
+		#end
+	</ul>
+</div>
+<!-- 底部 -->
+<div class="leftfoot" style="display:none;">
+<!-- 	<div style="line-height:25px;">
+		<a href="#" style="float:left;">关于我们</a><a href="#" style="float:right;">联系我们</a>
+	</div>
+	<div style="line-height:25px;clear:both;">
+		<a href="#" style="float:left;">免费声明</a><a href="#" style="float:right;">版权所有</a>
+	</div> -->
+	<div style="color:#747475;font-size:10px;clear:both;text-align:left;">Copyright © 2015.<br>杭州卓健信息科技有限公司</div>
+</div>
+<script>
+var select = 0;
+$(".litopic").eq(0).click();
+/* 鼠标悬挂事件1 */
+$(".litopic").mouseover(function(){
+	$(this).addClass("topic-hover")
+	$(this).children("div.topicbg").css("background","url("+$(this).attr('b2')+") no-repeat");
+	$(this).children("span[class='topic']").css('color','#ffffff');
+});
+/* 鼠标悬挂事件2 */
+$(".litopic").mouseout(function(){
+	if(select != $(this).attr("id")) {
+		$(this).children("div.topicbg").css("background","url("+$(this).attr('b1')+") no-repeat");
+		$(this).removeClass("topic-hover");
+		$(this).children("span[class='topic']").css('color','#333');
+	}
+});
+
+
+function gotoUrlNew(v,url,target){
+			$('.litopic').removeClass("topic-hover");
+			$(".topicbg").each(function(){
+				$(this).css("background","url("+$(this).parent('li[class="litopic"]').attr('b1')+") no-repeat");
+			});
+			$('.topic').css('color','#333');
+			v.className="litopic topic-hover";
+			select = v.id;
+			$(v).children("div.topicbg").css("background","url("+$(v).attr('b2')+") no-repeat");
+			$(v).children("span[class='topic']").css('color','#ffffff');
+			$("#"+target,parent.document).attr("src",url);
+
+}
+</script>

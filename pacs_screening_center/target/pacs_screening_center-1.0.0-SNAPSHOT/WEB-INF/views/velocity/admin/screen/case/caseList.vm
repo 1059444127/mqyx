@@ -1,0 +1,245 @@
+<link rel="stylesheet" href="/css/case/get.css" />
+<!-- 引用js、css -->
+<link rel="stylesheet" type="text/css" href="/defaultDiag/js/diag.css">
+<link rel="stylesheet" href="/defaultDiag/zTree/css/zTreeStyle/zTreeStyle.css" type="text/css">
+	<header class="b-header">
+        <div class="layer">
+            <img class="logo" src="/img/login/logo.png">
+            <div class="headmsg">
+            	<img src="$!ui.photoPath" onclick="window.location.href='/login/alreadyLogin.htm'"/>欢迎你，<span onclick="window.location.href='/login/alreadyLogin.htm'">$!ui.realName</span>&nbsp;&nbsp;|&nbsp;&nbsp;<span onclick="window.location.href='/login/loginIndex.htm'">退出</span>
+            </div>
+        </div>
+    </header>
+    
+	<div class="b-middle layer">
+		<div class="table-top">
+			<img class="topbd" src="/img/case/summary-border.png" alt="" />
+			<h2 class="name">欢迎回来，<span class="orange">$!ui.realName</span></h2>
+			<ul class="result">
+				<li>待诊断：&nbsp;&nbsp;<span class="orange" id="status1CountSpan">-</span>&nbsp;&nbsp;条</li>
+				<li>已诊断：&nbsp;&nbsp;<span class="orange" id="status5CountSpan">-</span>&nbsp;&nbsp;条</li>
+				<li>逾期诊断：&nbsp;&nbsp;<span class="orange" id="status3CountSpan">-</span>&nbsp;&nbsp;条</li>
+				<li>总会诊数：&nbsp;&nbsp;<span class="orange" id="statusAllCountSpan">-</span>&nbsp;&nbsp;条</li>
+			</ul>
+		</div>
+		<div class="table-bottom clearfix">
+			<ul class="table-get">
+				<li class="allTable">
+					<h3 class="table-title">可抢列表</h3>
+					<div class="table-main">
+						<table width="100%" cellspacing="0" cellpadding="0">
+							<tbody>
+								<tr class="table-menu">
+									<th>姓名</th>
+									<th>模态</th>
+									<th>检查部位</th>
+									<th>申请时间</th>
+									<th>操作</th>
+								</tr>
+							</tbody>
+							<tbody id="caseStatus0">
+	<!-- 							 <tr>
+									<td>预期</td>
+									<td>CT</td>
+									<td>头部正扫</td>
+									<td>2017-03-20</td>
+									<td><span class="getit">抢</span></td>
+								</tr>  -->
+							</tbody>
+						</table>
+					</div>
+				</li>
+				<li class="mineTable">
+					<h3 class="table-title">个人列表</h3>
+					<ul class="list">
+						<li class="current" id="caseStatus1L">待诊断</li>
+						<li id="caseStatus5L">已诊断</li>
+						<li id="caseStatus3L">逾期诊断</li>
+					</ul>
+					<div class="table-main" id="caseStatus1D">
+						<table id="1" width="100%" cellspacing="0" cellpadding="0">
+							<tbody>
+								<tr class="table-menu">
+									<th>姓名</th>
+									<th>性别</th>
+									<th>年龄</th>
+									<th>就诊类型</th>
+									<th>模态</th>
+									<th>检查部位</th>
+									<th>逾期计时</th>
+								</tr>
+							</tbody>
+							<tbody class="mineTable-list" id="caseStatus1TB">
+								<!-- <tr>
+									<td>张三</td>
+									<td>男</td>
+									<td>21</td>
+									<td>门诊</td>
+									<td>CT</td>
+									<td>胸部正扫</td>
+									<td>19:36</td>
+								</tr> -->
+							</tbody>
+						</table>
+						<div class="page-list" >
+				            <div class="pageimg page-prev" style="cursor: pointer;" onclick="statusPrev(1)">上一页 </div>
+				            <div class="big">
+					            <input type="text" value="1" name="queryString" id="status1Now" class="page-to" onkeyup='this.value=this.value.replace(/\D/gi,"")'>
+					            <span>/ &nbsp;</span>
+					            <span id="status1PageCount">1</span>
+					            <span class="page-go" onclick="statusGo(1)" style="cursor: pointer;">Go</span>
+				            </div>
+				            <div class="pageimg page-next" style="cursor: pointer;" onclick="statusNext(1)">下一页</div>
+			        	</div>
+					</div>
+					<div class="table-main" style="display:none;" id="caseStatus5D">
+						<table width="100%" cellspacing="0" cellpadding="0">
+							<tbody>
+								<tr class="table-menu">
+									<th>姓名</th>
+									<th>性别</th>
+									<th>年龄</th>
+									<th>就诊类型</th>
+									<th>模态</th>
+									<th>检查部位</th>
+								</tr>
+							</tbody>
+							<tbody class="mineTable-list" id="caseStatus5TB">
+								<!-- <tr>
+									<td>张三</td>
+									<td>男</td>
+									<td>21</td>
+									<td>门诊</td>
+									<td>CT</td>
+									<td>胸部正扫</td>
+								</tr> -->
+							</tbody>
+						</table>
+						<div class="page-list" >
+				            <div class="pageimg page-prev" style="cursor: pointer;" onclick="statusPrev(5)">上一页 </div>
+				            <div class="big">
+					            <input type="text" value="1" name="queryString" id="status5Now" class="page-to" onkeyup='this.value=this.value.replace(/\D/gi,"")'>
+					            <span>/ &nbsp;</span>
+					            <span id="status5PageCount">1</span>
+					            <span class="page-go" onclick="statusGo(5)" style="cursor: pointer;">Go</span>
+				            </div>
+				            <div class="pageimg page-next" style="cursor: pointer;" onclick="statusNext(5)">下一页</div>
+			        	</div>
+					</div>
+					<div class="table-main" style="display:none;" id="caseStatus3D">
+						<table width="100%" cellspacing="0" cellpadding="0">
+							<tbody>
+								<tr class="table-menu">
+									<th>姓名</th>
+									<th>性别</th>
+									<th>年龄</th>
+									<th>就诊类型</th>
+									<th>模态</th>
+									<th>检查部位</th>
+								</tr>
+							</tbody>
+							<tbody class="mineTable-list" id="caseStatus3TB">
+								<!-- <tr>
+									<td>张三</td>
+									<td>男</td>
+									<td>21</td>
+									<td>门诊</td>
+									<td>CT</td>
+									<td>胸部正扫</td>
+								</tr> -->
+							</tbody>
+						</table>
+						<div class="page-list" >
+				            <div class="pageimg page-prev" style="cursor: pointer;" onclick="statusPrev(3)">上一页 </div>
+				            <div class="big">
+					            <input type="text" value="1" name="queryString" id="status3Now" class="page-to" onkeyup='this.value=this.value.replace(/\D/gi,"")'>
+					            <span>/ &nbsp;</span>
+					            <span id="status3PageCount">1</span>
+					            <span class="page-go" onclick="statusGo(3)" style="cursor: pointer;">Go</span>
+				            </div>
+				            <div class="pageimg page-next" style="cursor: pointer;" onclick="statusNext(3)">下一页</div>
+			        	</div>
+					</div>
+					
+					<div class="pageMenu">
+						
+					</div>
+				</li>
+			</ul>
+			<div class="table-diag">
+				<ul class="msg">
+					<li class="msg-title">
+						<h2>影像会诊意见书</h2><div class="msg-btn clearfix" style="    float: right; margin-top: -33px; margin-right: 26px;"><a href="JavaScript:void(0)" target="_blank" id="pacsLS"><div>阅片</div></a></div>
+						<div class="number">患者编号：<span id="patientNoLS">--</span></div>
+					</li>
+					<li>
+						<ul class="msg-info clearfix">
+							<li><span class="li-title">患者姓名：</span><span class="li-msg" id="patientNameLS">--</span></li>
+							<li><span class="li-title">性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;别：</span><span class="li-msg" id="patientSexLS">--</span></li>
+							<li><span class="li-title">年&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;龄：</span><span class="li-msg" id="patientAgeLS">--</span></li>
+							<li><span class="li-title">检查部位：</span><span class="li-msg" id="itemLS">--</span></li>
+							<li><span class="li-title">联系电话：</span><span class="li-msg" id="patientPhoneLS">--</span></li>
+							<li><span class="li-title">检查日期：</span><span class="li-msg" id="sendDateLS">--</span></li>
+							<li><span class="li-title">就诊类型：</span><span class="li-msg" id="visitTypeLS">--</span></li>
+							<li><span class="li-title">检查编号：</span><span class="li-msg" id="checkNoLS">--</span></li>
+							<li><span class="li-title">送检医生：</span><span class="li-msg" id="sendDoctorNameLS">--</span></li>
+							<li><span class="li-title">送检医院：</span><span class="li-msg" id="sendHospitalNameLS">--</span></li>
+							<li><span class="li-title">模&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;态：</span><span class="li-msg" id="modalityLS">--</span></li>
+							<!-- <li><span class="li-title">影&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;像：</span><a class="li-msg" href="" target="_blank" id="pacsLS">详情请点击查看</a></li> -->
+						</ul>
+					</li>
+					<li class="msg-result">
+						<ul class="msg-result-left">
+							<ul id="tree1" class="ztree" style="overflow:auto;height:380px"></ul>
+						</ul>
+						<div class="msg-result-right" style="width: 470px;">
+							<div class="left-textarea">
+								<h4>影像所见</h4>
+								<textarea id="diag_A"></textarea>
+							</div>
+							<div class="right-textarea">
+								<h4>诊断结果</h4>
+								<textarea id="diag_B"></textarea>
+							</div>
+							<div id="digCL" class="msg-btn clearfix">
+								<div onclick="clearDiag()">清空</div>
+								<div id="commitButton" caseId="" onclick="commitDiag(this)">确定</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+	</div>
+	
+	<footer class="b-footer">
+            <div class="layer">
+                <div class="b-footer-us">
+                    <a href="">关于我们</a>|
+                    <a href="">联系我们</a>|
+                    <a href="">加入我们</a>
+                </div>
+                <div class="b-footer-content">
+                    Copyright &nbsp;(C)&nbsp;杭州梅清数码科技有限公司 &nbsp;&nbsp;地址：&nbsp;杭州市高新区（滨江）西湘路66号&nbsp;&nbsp;咨询电话：0571-86057861
+                </div>
+                <div class="b-footer-information">
+                    <span id="support">技术支持：<i class="hn_copy_icon"></i>杭州梅清数码科技有限公司&nbsp;&nbsp;访问统计 :&nbsp;&nbsp;<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1261014197'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1261014197%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script><span id="cnzz_stat_icon_1261014197"><a href="http://www.cnzz.com/stat/website.php?web_id=1261014197" target="_blank" title="站长统计"><img border="0" hspace="0" vspace="0" src="http://icon.cnzz.com/img/pic1.gif"></a></span><script src=" http://s11.cnzz.com/z_stat.php?id=1261014197&amp;show=pic1" type="text/javascript"></script><script src="http://c.cnzz.com/core.php?web_id=1261014197&amp;show=pic1&amp;t=z" charset="utf-8" type="text/javascript"></script></span>
+                </div>
+            </div>
+        </footer>
+
+	<script src="/js/case/get.js"></script>
+	<script src="/js/case/longpoling.js"></script>
+
+	<script src="/defaultDiag/js/diag.js"></script>
+	<script src="/defaultDiag/js/jquery.qrcode.min.js"></script>
+	<script type="text/javascript" src="/defaultDiag/zTree/js/jquery.ztree.core.js"></script>
+	<script>
+		longpoling();
+		$("#caseStatus1L").click();
+	</script>
+</body>
